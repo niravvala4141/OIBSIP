@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    /* background: url("img.jpg"); */
+    font-family: 'Poppins', sans-serif;
+    background: #00F260;  
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  
+    background: linear-gradient(to right, #0575E6, #00F260); 
+  
+
+}
+#answer{
+    width: 325px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    text-align: right;
+    position: relative;
+    padding-right:10px;
+    padding-top: 5px;
+    
+    box-shadow:inset 4px 4px 3px rgb(66, 66, 66),inset -4px -4px 3px rgb(131, 131, 131);
+}
+
+.calc{
+    background: #121212;
+    padding:15px;
+    display: inline-block;
+    position: relative;
+}
+.calc:before{
+    content: '';
+    position: absolute;
+    top:-2px;
+    bottom:-2px;
+    left: -2px;
+    right: -2px;
+    background :#fff;
+    z-index: -1;
+ }
+.calc:after{
+    content: '';
+    position: absolute;
+    top:-2px;
+    bottom:-2px;
+    left: -2px;
+    right: -2px;
+    background :#fff;
+    z-index: -2;
+    filter:blur(40px);
+}
+.calc:before,
+.calc:after{
+    background: linear-gradient(235deg,#4cffa5,#0f131f,#00bcd4);
+}
+input[type='text']{
+    padding-right: 10px;
+}
+input[value=' AC ']{
+    background: rgb(30, 154, 211);
+    box-shadow: 2px 2px 3px rgb(20, 19, 19), -2px -2px 3px rgb(61, 59, 59);
+}
+input[value=' AC ']:hover{
+    box-shadow:inset 2px 2px 3px rgb(20, 19, 19),inset -2px -2px 3px rgb(61, 59, 59);
+}
+input[value=' + '],input[value=' - '],input[value=' * '],input[value=' / ']{
+    font-size:32px;
+    text-align:center;
+    background: rgb(252, 109, 109);
+    box-shadow: 2px 2px 3px rgb(20, 19, 19), -2px -2px 3px rgb(61, 59, 59);
+}  
+input[value=' + ']:hover,input[value=' - ']:hover,input[value=' * ']:hover,input[value=' / ']:hover{ 
+    box-shadow:inset 4px 4px 3px rgb(252, 160, 160),inset -4px -4px 3px rgb(197, 93, 93);
+
+}
+input[value=' = ']{
+    background: rgb(65, 187, 130);
+    box-shadow: 2px 2px 3px rgb(20, 19, 19), -2px -2px 3px rgb(61, 59, 59);
+}
+input{
+    font-size:28px;
+    width:70px;
+    height: 60px;
+    border-radius: 10px;
+    color: whitesmoke;
+    margin:5px;
+    border:none;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 2px 3px rgb(66, 66, 66), -2px -2px 3px rgb(131, 131, 131);
+    background:rgb(22, 22, 22);
+}
+
+input:hover{
+    box-shadow:inset 4px 4px 3px rgb(66, 66, 66),inset -4px -4px 3px rgb(131, 131, 131);
+}
+.container h2{
+    color: rgb(17, 16, 19);
+    z-index: 10;
+}
