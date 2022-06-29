@@ -1,0 +1,15 @@
+{% extends 'base/main.html' %}
+{% block content %}
+<div class="bg-border-container">
+    <div class="header-bar">
+        <a href="{% url 'tasks' %}" ><span class="back-icon">&#8592;</span> Back</a>
+    </div>
+    <div class="card-wrapper">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input class="button" type="submit" value="submit">
+        </form>
+    </div>
+</div>
+{% endblock %}
