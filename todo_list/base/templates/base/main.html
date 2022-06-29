@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To do Tasks</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background: var(--blue);
+                
+                font-family: 'Poppins', sans-serif;
+                padding-top: 50px;
+            }
+            :root{
+                --blue: linear-gradient(109.6deg,  #141e30  11.2%, #243b55 91.1% );
+            }
+            .container{
+                max-width: 550px;
+                height:cover;
+                margin:auto;
+                background-color: #001728;
+                -webkit-box-shadow: 2px 2px 13px -4px  rgba(0,0,0.21);
+                box-shadow: 2px 2px 13px -4px  rgba(0,0,0,0.21);    
+            }
+             .bg-border-container{
+                position:relative;
+                width:560px;
+                height:auto;
+                {% comment %} display:flex;
+                justift-content:center;
+                align-items:center; {% endcomment %}
+                background: #eee;
+             }
+            
+            .bg-border-container:before{
+                content: '';
+                position: absolute;
+                top:-2px;
+                bottom:-2px;
+                left: -2px;
+                right: -2px;
+                background :#fff;
+                z-index: -1;
+             }
+            .bg-border-container:after{
+                content: '';
+                position: absolute;
+                top:-2px;
+                bottom:-2px;
+                left: -2px;
+                right: -2px;
+                background :#fff;
+                z-index: -2;
+                filter:blur(40px);
+            }
+            .bg-border-container:before,
+            .bg-border-container:after{
+                background: linear-gradient(235deg,#B48811,#060c21,#00bcd4);
+            }
+
+            h1,h2,h3,h4,h5,h6{
+                font-family: 'Poppins', sans-serif;
+            }
+            a ,p {
+                color: #4b5156;
+            }
+            .header-bar{
+                display:flex;
+                justify-content:space-between;
+                color: #fff;
+                padding: 10px;
+                {% comment %} border-radius: 5px 5px 0px 0px; {% endcomment %}
+                background-image: linear-gradient( 109.6deg,  #141e30  11.2%, #243b55 91.1% );
+                {% comment %} background-image: linear-gradient(140deg, #2AF598 0%, #08AEEA 100%); {% endcomment %}
+
+                {% comment %} background:#141e30; {% endcomment %}
+
+            }
+            .header-bar a{
+                color: #fafafa;
+                text-decoration: none;
+            }
+            .header-bar h1{
+                letter-spacing:3px;
+            }
+            .task-wrapper{
+                display: flex;
+                align-item: center;
+                justify-content: space-between;
+                color: red;
+                padding: 20px;
+                background: #fff;
+                border-top: 1px solid rgb(226,226,226);
+
+            }
+            .task-title{
+                display: flex;
+            }
+            .task-title a{
+                text-decoration: none;
+                color: #4b5156;
+                margin-left: 10px;
+            }
+            .task-complete-icon{
+                height: 20px;
+                width: 20px;
+                background-color: #abe9cd;
+                background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+                border-radius: 50%;
+                
+            }
+            .task-incomplete-icon{
+                height: 20px;
+                width: 20px;
+                background-color: #bdd4e7;
+                background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+                border-radius: 50%;
+            }
+            .delete-link{
+                display: flex;
+                text-decoration: none;
+                font-weight:900;
+                color: navyblue;
+                font-size: 20px;
+                
+            }
+            #search-add-wrapper{
+                display: flex;
+                justify-content:space-between;
+                align-item:center;
+                padding: 10px;
+
+            }
+            #add-link{
+                color: linear-gradient( 109.6deg,  #141e30  11.2%, #243b55 91.1% );
+                text-decoration: none;
+                font-size:35px;
+              
+                text-shadow: 1px 1px navyblue;
+            }
+            input[type=text],
+            input[type=password],
+            textarea{
+                border: 1px solid (--blue);
+                {% comment %} border-radius: 5px; {% endcomment %}
+                padding:10px;
+                width:90%;
+            }
+            .button{
+                border: 1px solid #141e30;
+                border-radius: 40px;
+                background: #fafafa;
+                color: var(--blue);
+                padding:10px 15px;
+                font-size:14px;
+                border-radius: 2px;
+                cursor:pointer;
+                font-size:16px;
+                font-weight:300;
+                letter-space:2px;
+                transition: all 0.4s ease;
+
+            }
+            .button:hover{
+                {% comment %} transform: scale(1.03); {% endcomment %}
+                background: var(--blue);
+                color: #fafafa;
+            }
+            
+
+            label{
+                padding-top:10px !important;
+                display:block;
+            }
+           
+           .card-wrapper{
+                padding:20px;
+                margin:5px;
+           }
+
+        </style>
+    </head>
+    <body>
+       <div class="container">
+            {% block content %}
+
+            {% endblock %}
+       </div> 
+        
+        <script src="" async defer></script>
+    </body>
+</html>
