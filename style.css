@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Dancing+Script:wght@500&family=EB+Garamond:ital,wght@1,500&family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --black-50: #18194b;
+    --black-100: #1b1b1d;
+    --text-white: rgb(214, 211, 211);
+    --gold: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: var(--text-white);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.home-page {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+.home-page .img {}
+
+.home-page .line {
+    width: 15px;
+    height: 500px;
+    position: absolute;
+    grid-column: ;
+    top: 30px;
+    right: 100px;
+    background: rgb(228, 238, 96);
+
+}
+
+.home-page .quote {
+    position: absolute;
+    top: 140px;
+    right: 130px;
+    width: 50%;
+    text-align: right;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 200;
+    font-family: 'Dancing Script', cursive;
+}
+
+.home-page .quote p {
+    color: var(--text-white);
+}
+
+.home-page .img img {
+    margin: 15px 25px;
+    width: 500px;
+    height: 40%;
+
+}
+
+.missile-man {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: goldenrod;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    background-color: #1e1616;
+}
+
+.missile-man .round-img img {
+    width: 200px;
+    border-radius: 70px;
+}
+
+.missile-man h1 {
+    display: inline-block;
+
+}
+
+.missile-man span {
+    color: #772f1a;
+}
+
+/* Button */
+.button {
+    padding: 20px;
+    text-align: center;
+}
+
+.button .btn {
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 20px;
+}
+
+.button .btn .btn-np {
+    padding: 30px;
+}
+
+/* Main Bio */
+.main-bio {
+    margin: 0px 0px;
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #080a2a 0%, #000000 74%);
+    /* background: #2e2b2b; */
+    box-sizing: border-box;
+
+}
+
+.main-bio .bio-1 {
+    margin: 10px 20px;
+}
+
+.main-bio .row {
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    text-overflow: ellipsis;
+}
+
+.main-bio .row .desc {
+    grid-template-columns: 40%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+    overflow-x: hidden;
+    transform: scale(0.9);
+    text-align: justify;
+}
+.main-bio .row .desc h3{
+    color:rgb(90, 255, 211)
+}
+
+.main-bio .row .desc p {
+    margin-right: 15px;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+}
+
+.main-bio .row .desc:hover {
+    transform: scale(0.90);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.main-bio .row .pic-1 {
+    grid-template-columns: 50%;
+
+}
+
+.main-bio .pic-1 .frame {
+    /* background-color: gray; */
+    width: 600px;
+
+}
+
+.main-bio .pic-1 .frame img {
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    filter: drop-shadow(5px 5px 5px #222);
+    /* margin:0; */
+    /* padding:0; */
+
+}
+
+/* Mid Quote */
+.mid-quote {
+    width: 90%;
+    text-align: center;
+    color: var(--black-100);
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+    margin: auto;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transform: scale(0.9);
+    font-family: 'Dancing Script', cursive;
+}
+
+.mid-quote:hover {
+    transform: scale(0.90);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+
+/* Footer CSS */
+
+.site-footer {
+
+    background-color: #000000;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
